@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burger Étlep</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* third example */
+
+        .food-box-2 {
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            flex-basis: 60%;
+            margin-top: -11px
+        }
+
+        .food-box-1 {
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            flex-basis: 20%;
+            margin-top: -11px
+        }
+
+
+
+        @media (min-width: 900px) {
+            .food-container {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="body-bg">
+        <img src="image/burger-bg.jpg" class="food-bg-img" alt="food-bg">
+    </div>
+    <div class="food-bg">
+        <img src="image/burger-bg-one.png" class="food-bg-img" alt="food-bg">
+    </div>
+    <div class="food-meal">
+        <!-- third example -->
+        <div class="food-container">
+            <div class="food-box-1">
+                <div class="food-box-one">
+                    <p class="ribbon">
+                        <span class="ribbon-content">Hamburger</span>
+                    </p>
+
+                    <p class="ribbon-price">
+                        <span class="ribbon-price-content">Normal</span>
+                    </p>
+
+                    <p class="ribbon-price" id="xl-price">
+                        <span class="ribbon-price-content">Extra</span>
+                    </p>
+
+                    <div class="food-img">
+                        <ul>
+                            <li>
+                                <img src="image/hamburger1.png" class="table-food-img" alt="hamburger-1">
+                            </li>
+                            <li>
+                                <img src="image/hamburger2.png" class="table-food-img" alt="hamburger-2">
+                            </li>
+                            <li>
+                                <img src="image/hamburger3.png" class="table-food-img" alt="hamburger-3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box-2">
+                <div class="food-box-one-table">
+                    <div class="food-box-table">
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Big Bro burger</span>
+                                <span>
+                                    <img src="image/paleo-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/gluten-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/csipos-icon.png" class="meal-icon">
+                                </span>
+                               <span class="header-social-line" id="first-line"></span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                                <span class="table-price-xl"> 2190 Ft</span>
+                            </div>
+                            <div class="table-description">mega buciban, 2db 45dkg-os marhahússal</div>
+                        </div>
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">A báró kedvence burger</span>
+                                <span>
+                                    <img src="image/paleo-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/gluten-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/csipos-icon.png" class="meal-icon">
+                                </span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                                <span class="table-price-xl"> 2190 Ft</span>
+                            </div>
+                            <div class="table-description">mega buciban, 2db 45dkg-os marhahússal</div>
+                        </div>
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Fried Chicken burger</span>
+                                <span>
+                                    <img src="image/paleo-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/gluten-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/csipos-icon.png" class="meal-icon">
+                                </span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                                <span class="table-price-xl"> 2190 Ft</span>
+                            </div>
+                            <div class="table-description">mega buciban, 2db 45dkg-os marhahússal</div>
+                        </div>
+
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Hagymakarikás burger</span>
+                                <span>
+                                    <img src="image/paleo-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/gluten-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/csipos-icon.png" class="meal-icon">
+                                </span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                                <span class="table-price-xl"> 2190 Ft</span>
+                            </div>
+                            <div class="table-description">mega buciban, 2db 45dkg-os marhahússal</div>
+                        </div>
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Halihó burger</span>
+                                <span>
+                                    <img src="image/paleo-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/gluten-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/csipos-icon.png" class="meal-icon">
+                                </span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                                <span class="table-price-xl"> 2190 Ft</span>
+                            </div>
+                            <div class="table-description">mega buciban, 2db 45dkg-os marhahússal</div>
+                        </div>
+
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Little Bro gluténmentes burger</span>
+                                <span>
+                                    <img src="image/paleo-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/gluten-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/csipos-icon.png" class="meal-icon">
+                                </span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                                <span class="table-price-xl"> 2190 Ft</span>
+                            </div>
+                            <div class="table-description">mega buciban, 2db 45dkg-os marhahússal</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="food-box-1">
+                <div class="food-box-third">
+                    <p class="ribbon">
+                        <span class="ribbon-content">Tortilla</span>
+                    </p>
+
+                    <p class="ribbon-price">
+                        <span class="ribbon-price-content">Ára</span>
+                    </p>
+                    <div class="food-img">
+                        <ul>
+                            <li>
+                                <img src="image/tortilla1.png" class="table-food-img" alt="tortilla1">
+                            </li>
+                            <li>
+                                <img src="image/tortilla2.png" class="table-food-img" alt="tortilla2">
+                            </li>
+                            <li>
+                                <img src="image/tortilla3.png" class="table-food-img" alt="tortilla3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box-3">
+                <div class="food-box-table-third">
+                    <div class="food-box-table">
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Csirkés quesadilla</span>
+                                <span>
+                                    <img src="image/paleo-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/gluten-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/csipos-icon.png" class="meal-icon">
+                                </span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                                
+                            </div>
+                            <div class="table-description">mega buciban, 2db 45dkg-os marhahússal</div>
+                        </div>
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Csirkés tortilla </span>
+                                <span>
+                                    <img src="image/paleo-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/gluten-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/csipos-icon.png" class="meal-icon">
+                                </span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                               
+                            </div>
+                            <div class="table-description">mega buciban, 2db 45dkg-os marhahússal</div>
+                        </div>
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">House burrito</span>
+                                <span>
+                                    <img src="image/paleo-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/gluten-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/csipos-icon.png" class="meal-icon">
+                                </span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                               
+                            </div>
+                            <div class="table-description">mega buciban, 2db 45dkg-os marhahússal</div>
+                        </div>
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Marhahúsos quesadilla</span>
+                                <span>
+                                    <img src="image/paleo-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/gluten-icon.png" class="meal-icon">
+                                </span>
+                                <span>
+                                    <img src="image/csipos-icon.png" class="meal-icon">
+                                </span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                                
+                            </div>
+                            <div class="table-description">mega buciban, 2db 45dkg-os marhahússal</div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-container">
+            <div class="food-box-1">
+                <div class="food-box-second-table">
+                    <div class="food-box-table">
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Csirkés-kukoricás chowder</span>
+                                    <span>
+                                        <img src="image/paleo-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/gluten-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/csipos-icon.png" class="meal-icon">
+                                    </span>
+                             </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                            </div>
+                            <div class="table-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                        </div>
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Kukoricakrémleves</span>
+                                   <span>
+                                        <img src="image/paleo-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/gluten-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/csipos-icon.png" class="meal-icon">
+                                    </span>
+                              </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                            </div>
+                            <div class="table-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        </div>
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Fokhagymakrémleves</span>
+                                  <span>
+                                        <img src="image/paleo-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/gluten-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/csipos-icon.png" class="meal-icon">
+                                    </span>
+                            </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                            </div>
+                            <div class="table-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        </div>
+
+                        <div class="table-box">
+                                <div class="table-box-content">
+                                    <span class="table-title">Sütőtökkrémleves</span>
+                                      <span>
+                                            <img src="image/paleo-icon.png" class="meal-icon">
+                                        </span>
+                                        <span>
+                                            <img src="image/gluten-icon.png" class="meal-icon">
+                                        </span>
+                                        <span>
+                                            <img src="image/csipos-icon.png" class="meal-icon">
+                                        </span>
+                                </div>
+                                <div class="table-box-price">
+                                    <span class="table-price-normal"> 1890 Ft</span>
+                                </div>
+                                <div class="table-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="food-box-1">
+                <div class="food-box-second">
+                    <p class="ribbon">
+                        <span class="ribbon-content">Levesek</span>
+                    </p>
+
+                    <p class="ribbon-price">
+                        <span class="ribbon-price-content">Ára</span>
+                    </p>
+                    <div class="food-img">
+                        <ul>
+                            <li>
+                                <img src="image/leves1.png" class="table-food-img" alt="leves1">
+                            </li>
+                            <li>
+                                <img src="image/leves2.png" class="table-food-img" alt="leves2.png">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="food-box-1">
+                <div class="food-box-fourth">
+                    <p class="ribbon">
+                        <span class="ribbon-content">Desszertek</span>
+                    </p>
+
+                    <p class="ribbon-price">
+                        <span class="ribbon-price-content">Ára</span>
+                    </p>
+                    <div class="food-img">
+                        <ul>
+                            <li>
+                                <img src="image/deszert1.png" class="table-food-img" alt="deszert1">
+                            </li>
+                            <li>
+                                <img src="image/sajtorta.png" class="table-food-img" alt="sajtorta">
+                            </li>
+
+                            <li>
+                                <img src="image/amerikai-pite.png" class="table-food-img" alt="amerikai-pite">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box-2">
+                <div class="food-table-box-fourth">
+                    <div class="food-box-table">
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Amerikai pite házilag</span>
+                                    <span>
+                                      <img src="image/paleo-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/gluten-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/csipos-icon.png" class="meal-icon">
+                                    </span>
+                                </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                            </div>
+                            <div class="table-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        </div>
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Meggyes-vaníliás-pudingos torta</span>
+                                   <span>
+                                        <img src="image/paleo-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/gluten-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/csipos-icon.png" class="meal-icon">
+                                      </span>  
+                                    </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                            </div>
+                            <div class="table-description">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        </div>
+
+                        <div class="table-box">
+                            <div class="table-box-content">
+                                <span class="table-title">Sajttorta </span>
+                                   <span>
+                                        <img src="image/paleo-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/gluten-icon.png" class="meal-icon">
+                                    </span>
+                                    <span>
+                                        <img src="image/csipos-icon.png" class="meal-icon">
+                                    </span>
+                             </div>
+                            <div class="table-box-price">
+                                <span class="table-price-normal"> 1890 Ft</span>
+                            </div>
+                            <div class="table-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="news-books">
+        <div class="box">
+            <div>
+                <img src="image/paleo-icon-feher.png" class="meal-icon"> </div>
+            <div class="news-title">Paleo</div>
+            <div>
+                <img src="image/gluten-icon-feher.png" class="meal-icon"> </div>
+            <div class="news-title">Glutén</div>
+            <div>
+                <img src="image/csipos-icon-feher.png" class="meal-icon">
+            </div>
+            <div class="news-title">Csípős</div>
+            <div>
+                <img src="image/vegan-icon-feher.png" class="meal-icon">
+            </div>
+            <div class="news-title">Vegan</div>
+            <div>
+                <img src="image/laktose-icon-feher.png" class="meal-icon">
+            </div>
+            <div class="news-title">Laktózmentes</div>
+            <div>
+                <img src="image/cukor-icon-feher.png" class="meal-icon">
+            </div>
+            <div class="news-title">Hozzáadott cukor nélkül</div>
+        </div>
+        <div class="burger-link">burgerandsteak.hu</div>
+    </div>
+    <div class="clear"></div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

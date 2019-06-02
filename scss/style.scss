@@ -1,0 +1,735 @@
+
+@font-face {
+    font-family: AtlantidaFonts;
+    src: url(../fonts/Atlantida_personal_use.ttf);
+ }
+
+
+
+// variable
+
+$text-color:#fff;
+$primercolor:#202075;
+
+
+$secunder-color:#EC1B23;
+
+$main-text:22px;
+$description-text:18px;
+$price-text:22px;
+
+$meail-icon:36px;
+$table-box-height:5px;
+
+$meal-img:235px;
+
+$table-width:750px;
+
+//mixin
+
+
+@mixin tablebox{
+    display: block;
+    background-color:rgba(229,230,233,0.8);
+    padding: 14px;
+    width: 690px;
+} 
+
+@mixin list-block{
+    display: block;
+    list-style: none;
+}
+
+
+@mixin list-inline{
+    display: inline-block;
+    list-style: none;
+}
+
+@mixin foodname{
+    font-family: AtlantidaFonts;
+    color:$primercolor;
+    font-size: 40px;
+}
+
+
+@mixin ribon{
+    height: 34px;       
+    letter-spacing: 3;       
+    font-family: AtlantidaFonts;       
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding: 10px; 
+    margin: 2em auto 3em 2em; 
+    position: absolute;
+    
+}
+
+@mixin ribon-price{
+    font-family: 'Open Sans', sans-serif;
+    height: 11px;       
+    letter-spacing: 2;       
+   font-size: 20px;
+    background:#202075;
+    color: #fff;
+    text-align: center;
+    padding: 10px; 
+    margin: 2em auto 3em 2em; 
+   
+    
+}
+
+@mixin ribon-price-blue-bal{
+    background: url("../image/ara_bal_kek.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+}
+
+@mixin ribon-price-blue-jobb{
+    background: url("../image/ara_jobb_kek.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+   
+}
+
+
+@mixin ribon-price-red-bal{
+    background: url("../image/ara_bal_piros.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+   
+}
+
+@mixin ribon-price-red-jobb{
+    background: url("../image/ara_jobb_piros.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+   
+}
+
+
+@mixin ribon-blue-bal{
+    background: url("../image/csillag_cinke_bal_kek.png");
+    width: 76px;
+    height: 54px;
+    position: absolute;
+    z-index: 1000;
+}
+
+
+@mixin ribon-blue-jobb{
+    background: url("../image/csillag_cinke_jobb_kek.png");
+    width: 76px;
+    height: 54px;
+}
+
+
+
+@mixin ribon-red-bal{
+    background: url("../image/csillag_cinke_bal_piros.png");
+    width: 76px;
+    height: 54px;
+    position: absolute;
+    z-index: 1000;
+   
+}
+
+
+@mixin ribon-red-jobb{
+    background: url("../image/csillag_cinke_jobb_piros.png");
+    width: 76px;
+    height: 54px;
+}
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border:0;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 1920px;
+     height: 1080px;
+    overflow: hidden;
+}
+
+.body-bg {
+    height: 1080px;
+    width: 1920px;
+    position: absolute;
+    top: 0;
+    left:10%;
+    z-index: 0 }
+
+.food-bg{
+    height: 1080px;
+    width: 1920px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.food-name{
+    @include foodname();
+
+}
+
+.food-meal{
+    position: relative;
+    z-index: 2000;
+    margin-top: 20px;
+  
+
+}
+
+.table-box-content {
+    width: 500px;
+}
+
+
+
+.table-box div{
+    display: inline-block;
+
+}
+
+
+.burger-link{
+     position: absolute;
+     font-size: 24px;
+     left:80%;
+     color: $text-color;
+     font-weight: bold;
+     letter-spacing: 1px;
+}
+    
+
+.flex-container {
+    display: flex;
+    margin-top: 15px;
+    
+  }
+
+ .clear{
+    clear: both;
+}
+
+
+
+
+
+
+// table
+
+
+.table-title {
+    width: 350px;
+}
+
+
+
+ .icon-box {
+    width: 128px;
+   
+}
+
+.table-description{
+   width: 370px;
+ }
+
+.table-food-img{
+    margin-left: 20px;
+    width: $meal-img;
+    margin-top: 10px;
+ } 
+
+.food-box-table{
+    @include tablebox;
+}   
+.table-title {
+   font-size: $main-text;
+   font-weight: bold;
+}
+
+.meal-icon{
+ width: $meail-icon;
+ }
+    
+ .table-price-normal{
+    font-size: $price-text;
+  }
+
+.table-price-xl{
+    font-size: $price-text;
+    margin-left:26px;
+}
+
+.flex-container {
+  display: flex;
+ flex-direction: column;
+}
+
+.table-description{
+  font-size: $description-text;
+}
+
+
+
+/*-------------ribon----------*/
+
+.ribbon {
+    @include ribon();
+    background:$primercolor;
+}
+   
+   .ribbon-content{
+     position: relative;
+     top:-10%;
+     left:5%;
+      
+   }
+   .ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    z-index: -1;
+   }
+  
+   .ribbon  {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+   }
+
+
+   
+
+
+
+
+/*------------ribon price------------------*/
+.ribbon-price {
+   @include ribon-price();
+   
+ }
+   
+   .ribbon-price-content{
+     position: relative;
+     top: -73%;
+      left: 0%;
+      
+   }
+   .ribbon-price:before, .ribbon-price:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+   }
+
+  .ribbon-price  {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+   }
+
+   
+
+.food-box-one-table{
+    .food-box-table{
+        margin-top: 103px;
+        margin-left: 20px;
+        width:750px;
+
+        .table-price-xl {
+            font-size: 22px;
+            margin-left: 80px;
+        }
+
+       
+    }
+}
+
+
+.food-box-one{
+    margin-top: -15px;
+
+
+   #xl-price{
+    left: 47%;
+
+      .ribbon-price-content{
+          padding-left: 1px;
+      }
+
+      :before {
+        @include ribon-price-blue-bal();
+        top:0px;
+        left:20%;
+     }
+
+   }
+
+    .ribbon-price {
+        top: -2%;
+        left: 34%;
+      }
+
+
+      .ribbon-price:before {
+        @include ribon-price-blue-bal();
+        top:0px;
+        left:-43%;
+     }
+ 
+      .ribbon-price:after {
+        @include ribon-price-blue-jobb();
+        top:0px;
+        left:90%;
+    
+    }
+
+   
+    .ribbon {
+        z-index: 1000;
+        top: -8%;
+        left: 14%;
+        background:$primercolor;
+
+       }
+
+       .ribbon-content{
+          left:-5px;
+         
+      }
+
+       .ribbon:before {
+        @include ribon-blue-bal;   
+        right: 99%;
+       }
+      
+      .ribbon:after {
+        @include ribon-blue-jobb; 
+        margin-left: 50px;
+      }
+      
+      
+
+.food-img{
+            ul li {
+                @include list-block;
+                margin-top: 10px
+    
+            }
+        }
+      
+   }
+   
+   
+   .food-box-second-table{
+       margin-left: 25px;
+     .food-box-table{
+         margin-top: 80px;
+     }
+
+     .table-price-normal {
+     margin-left: 87px;
+    }
+
+
+   }
+
+
+
+    
+
+
+.food-box-second {
+    margin-top: 50px;
+
+    .ribbon-price {
+        top: 49%;
+        left: 32%;
+        background-color: $secunder-color;
+       
+      }
+
+
+      .ribbon-price:before {
+        @include ribon-price-red-bal();
+        top:0px;
+        left:-70%;
+     }
+ 
+      .ribbon-price:after {
+        @include ribon-price-red-jobb();
+        top:0px;
+        left:90%;
+    
+    }
+
+
+    
+    .ribbon {
+        z-index: 1000;
+        top: 43%;
+        left: 1%;
+        background:$secunder-color;
+       }
+
+       .ribbon:before {
+        @include ribon-red-bal();   
+        right: 99%;
+       }
+      
+      .ribbon:after {
+        @include ribon-red-jobb(); 
+        margin-left: 40px;
+      }   
+
+
+    .food-img{
+        margin-bottom: 60px;
+    }
+   
+    ul li {
+        @include list-inline;
+        margin-top: 30px;
+    
+       
+        
+    }
+
+    .food-box-table{
+        margin-left: 60px;
+    }
+
+    .food-name{
+        position: relative;
+        z-index: 2000;
+        left:3%;
+        top:-5px;
+    }
+    
+
+
+   
+} 
+
+
+.food-box-table-third{
+    position: relative;
+    top:230px;
+    right: 99%;
+
+    .food-box-table{
+        width: 722px;
+    }
+
+
+    .table-price-normal {
+      margin-left: 119px;
+    }
+}
+
+
+.food-box-third{
+    display: table;
+    margin-top: -6px;
+
+    .ribbon-price {
+        top: 14%;
+        left: 91%;
+        background-color: $secunder-color;
+    }
+
+
+      .ribbon-price:before {
+        @include ribon-price-red-bal();
+        top:0px;
+        left:-70%;
+     }
+ 
+      .ribbon-price:after {
+        @include ribon-price-red-jobb();
+        top:0px;
+        left:90%;
+    
+    }
+
+    .ribbon {
+        z-index: 1000;
+        top: 8%;
+        left: 59%;
+        background:$secunder-color;
+       }
+
+       .ribbon:before {
+        @include ribon-red-bal();   
+        right: 99%;
+       }
+      
+      .ribbon:after {
+        @include ribon-red-jobb(); 
+        margin-left: 40px;
+      }   
+
+
+
+    .food-img{
+        margin-left:50px;
+        
+        ul li {
+            display: table-cell;
+            margin-top: 20px;
+           
+        }
+    
+    } 
+
+    
+   
+   
+   
+}
+
+
+
+.food-box-fourth{
+    display: table;
+
+    .ribbon-price {
+        top: 63%;
+        left: 90%;
+    }
+
+
+      .ribbon-price:before {
+        @include ribon-price-blue-bal();
+        top:0px;
+        left:-70%;
+     }
+ 
+      .ribbon-price:after {
+        @include ribon-price-blue-jobb();
+        top:0px;
+        left:90%;
+    
+    }
+
+    .ribbon {
+        z-index: 1000;
+        top: 58%;
+        left: 59%;
+       }
+
+       .ribbon:before {
+        @include ribon-blue-bal;   
+        right: 99%;
+       }
+      
+      .ribbon:after {
+        @include ribon-blue-jobb; 
+        margin-left: 50px;
+      }   
+
+    .food-img{
+        margin-left: 109px;
+        margin-top: -10px;
+        
+        ul li {
+            display: table-cell;
+            margin-top: 20px;
+           
+        }
+
+    }
+}
+
+.food-table-box-fourth{
+    .food-box-table{
+        position:absolute;
+        top: 71%;
+        left: 59%;
+        width: 700px;
+    }
+
+    .table-price-normal {
+        margin-left: 96px;
+    }
+}
+
+
+
+
+
+.news-books{
+    width: 1920px;
+    background-color:rgba(77,78,82,0.7);
+    height: 40px;
+    padding-top: 2px;
+    margin-top: 38px;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+    padding-left: 20px;
+    top: 93%;
+    z-index: 2000;
+
+ 
+  .box div {
+     float: left;
+     margin-right: 10px;
+ }
+
+   .news-title{
+       color:#fff;
+       margin-top: 10px;
+      
+   }
+
+   .meal-icon{
+     width: $meail-icon;
+     padding-top: 1px;
+     padding-left: 5px;
+     
+ }
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+ 
+
+
+
+

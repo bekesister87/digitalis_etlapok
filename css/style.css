@@ -1,0 +1,424 @@
+@font-face {
+  font-family: AtlantidaFonts;
+  src: url(../fonts/Atlantida_personal_use.ttf); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden; }
+
+.body-bg {
+  height: 1080px;
+  width: 1920px;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: 0; }
+
+.food-bg {
+  height: 1080px;
+  width: 1920px;
+  position: absolute;
+  top: 0;
+  z-index: 0; }
+
+.food-name {
+  font-family: AtlantidaFonts;
+  color: #202075;
+  font-size: 40px; }
+
+.food-meal {
+  position: relative;
+  z-index: 2000;
+  margin-top: 20px; }
+
+.table-box-content {
+  width: 500px; }
+
+.table-box div {
+  display: inline-block; }
+
+.burger-link {
+  position: absolute;
+  font-size: 24px;
+  left: 80%;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px; }
+
+.clear {
+  clear: both; }
+
+.table-title {
+  width: 350px; }
+
+.icon-box {
+  width: 128px; }
+
+.table-description {
+  width: 370px; }
+
+.table-food-img {
+  margin-left: 20px;
+  width: 235px;
+  margin-top: 10px; }
+
+.food-box-table {
+  display: block;
+  background-color: rgba(229, 230, 233, 0.8);
+  padding: 14px;
+  width: 690px; }
+
+.table-title {
+  font-size: 22px;
+  font-weight: bold; }
+
+.meal-icon {
+  width: 36px; }
+
+.table-price-normal {
+  font-size: 22px; }
+
+.table-price-xl {
+  font-size: 22px;
+  margin-left: 26px; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.table-description {
+  font-size: 18px; }
+
+/*-------------ribon----------*/
+.ribbon {
+  height: 34px;
+  letter-spacing: 3;
+  font-family: AtlantidaFonts;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin: 2em auto 3em 2em;
+  position: absolute;
+  background: #202075; }
+
+.ribbon-content {
+  position: relative;
+  top: -10%;
+  left: 5%; }
+
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  z-index: -1; }
+
+.ribbon {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em; }
+
+/*------------ribon price------------------*/
+.ribbon-price {
+  font-family: 'Open Sans', sans-serif;
+  height: 11px;
+  letter-spacing: 2;
+  font-size: 20px;
+  background: #202075;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin: 2em auto 3em 2em; }
+
+.ribbon-price-content {
+  position: relative;
+  top: -73%;
+  left: 0%; }
+
+.ribbon-price:before, .ribbon-price:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  z-index: -1; }
+
+.ribbon-price {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em; }
+
+.food-box-one-table .food-box-table {
+  margin-top: 103px;
+  margin-left: 20px;
+  width: 750px; }
+  .food-box-one-table .food-box-table .table-price-xl {
+    font-size: 22px;
+    margin-left: 80px; }
+
+.food-box-one {
+  margin-top: -15px; }
+  .food-box-one #xl-price {
+    left: 47%; }
+    .food-box-one #xl-price .ribbon-price-content {
+      padding-left: 1px; }
+    .food-box-one #xl-price :before {
+      background: url("../image/ara_bal_kek.png");
+      width: 43px;
+      height: 31px;
+      position: absolute;
+      z-index: 1000;
+      top: 0px;
+      left: 20%; }
+  .food-box-one .ribbon-price {
+    top: -2%;
+    left: 34%; }
+  .food-box-one .ribbon-price:before {
+    background: url("../image/ara_bal_kek.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: -43%; }
+  .food-box-one .ribbon-price:after {
+    background: url("../image/ara_jobb_kek.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 90%; }
+  .food-box-one .ribbon {
+    z-index: 1000;
+    top: -8%;
+    left: 14%;
+    background: #202075; }
+  .food-box-one .ribbon-content {
+    left: -5px; }
+  .food-box-one .ribbon:before {
+    background: url("../image/csillag_cinke_bal_kek.png");
+    width: 76px;
+    height: 54px;
+    position: absolute;
+    z-index: 1000;
+    right: 99%; }
+  .food-box-one .ribbon:after {
+    background: url("../image/csillag_cinke_jobb_kek.png");
+    width: 76px;
+    height: 54px;
+    margin-left: 50px; }
+  .food-box-one .food-img ul li {
+    display: block;
+    list-style: none;
+    margin-top: 10px; }
+
+.food-box-second-table {
+  margin-left: 25px; }
+  .food-box-second-table .food-box-table {
+    margin-top: 80px; }
+  .food-box-second-table .table-price-normal {
+    margin-left: 87px; }
+
+.food-box-second {
+  margin-top: 50px; }
+  .food-box-second .ribbon-price {
+    top: 49%;
+    left: 32%;
+    background-color: #EC1B23; }
+  .food-box-second .ribbon-price:before {
+    background: url("../image/ara_bal_piros.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: -70%; }
+  .food-box-second .ribbon-price:after {
+    background: url("../image/ara_jobb_piros.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 90%; }
+  .food-box-second .ribbon {
+    z-index: 1000;
+    top: 43%;
+    left: 1%;
+    background: #EC1B23; }
+  .food-box-second .ribbon:before {
+    background: url("../image/csillag_cinke_bal_piros.png");
+    width: 76px;
+    height: 54px;
+    position: absolute;
+    z-index: 1000;
+    right: 99%; }
+  .food-box-second .ribbon:after {
+    background: url("../image/csillag_cinke_jobb_piros.png");
+    width: 76px;
+    height: 54px;
+    margin-left: 40px; }
+  .food-box-second .food-img {
+    margin-bottom: 60px; }
+  .food-box-second ul li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 30px; }
+  .food-box-second .food-box-table {
+    margin-left: 60px; }
+  .food-box-second .food-name {
+    position: relative;
+    z-index: 2000;
+    left: 3%;
+    top: -5px; }
+
+.food-box-table-third {
+  position: relative;
+  top: 230px;
+  right: 99%; }
+  .food-box-table-third .food-box-table {
+    width: 722px; }
+  .food-box-table-third .table-price-normal {
+    margin-left: 119px; }
+
+.food-box-third {
+  display: table;
+  margin-top: -6px; }
+  .food-box-third .ribbon-price {
+    top: 14%;
+    left: 91%;
+    background-color: #EC1B23; }
+  .food-box-third .ribbon-price:before {
+    background: url("../image/ara_bal_piros.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: -70%; }
+  .food-box-third .ribbon-price:after {
+    background: url("../image/ara_jobb_piros.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 90%; }
+  .food-box-third .ribbon {
+    z-index: 1000;
+    top: 8%;
+    left: 59%;
+    background: #EC1B23; }
+  .food-box-third .ribbon:before {
+    background: url("../image/csillag_cinke_bal_piros.png");
+    width: 76px;
+    height: 54px;
+    position: absolute;
+    z-index: 1000;
+    right: 99%; }
+  .food-box-third .ribbon:after {
+    background: url("../image/csillag_cinke_jobb_piros.png");
+    width: 76px;
+    height: 54px;
+    margin-left: 40px; }
+  .food-box-third .food-img {
+    margin-left: 50px; }
+    .food-box-third .food-img ul li {
+      display: table-cell;
+      margin-top: 20px; }
+
+.food-box-fourth {
+  display: table; }
+  .food-box-fourth .ribbon-price {
+    top: 63%;
+    left: 90%; }
+  .food-box-fourth .ribbon-price:before {
+    background: url("../image/ara_bal_kek.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: -70%; }
+  .food-box-fourth .ribbon-price:after {
+    background: url("../image/ara_jobb_kek.png");
+    width: 43px;
+    height: 31px;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 90%; }
+  .food-box-fourth .ribbon {
+    z-index: 1000;
+    top: 58%;
+    left: 59%; }
+  .food-box-fourth .ribbon:before {
+    background: url("../image/csillag_cinke_bal_kek.png");
+    width: 76px;
+    height: 54px;
+    position: absolute;
+    z-index: 1000;
+    right: 99%; }
+  .food-box-fourth .ribbon:after {
+    background: url("../image/csillag_cinke_jobb_kek.png");
+    width: 76px;
+    height: 54px;
+    margin-left: 50px; }
+  .food-box-fourth .food-img {
+    margin-left: 109px;
+    margin-top: -10px; }
+    .food-box-fourth .food-img ul li {
+      display: table-cell;
+      margin-top: 20px; }
+
+.food-table-box-fourth .food-box-table {
+  position: absolute;
+  top: 71%;
+  left: 59%;
+  width: 700px; }
+
+.food-table-box-fourth .table-price-normal {
+  margin-left: 96px; }
+
+.news-books {
+  width: 1920px;
+  background-color: rgba(77, 78, 82, 0.7);
+  height: 40px;
+  padding-top: 2px;
+  margin-top: 38px;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 20px;
+  top: 93%;
+  z-index: 2000; }
+  .news-books .box div {
+    float: left;
+    margin-right: 10px; }
+  .news-books .news-title {
+    color: #fff;
+    margin-top: 10px; }
+  .news-books .meal-icon {
+    width: 36px;
+    padding-top: 1px;
+    padding-left: 5px; }
