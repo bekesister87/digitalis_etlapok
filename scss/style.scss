@@ -14,9 +14,9 @@ $primercolor:#202075;
 
 $secunder-color:#EC1B23;
 
-$main-text:22px;
+$main-text:24px;
 $description-text:18px;
-$price-text:22px;
+$price-text:21px;
 
 $meail-icon:36px;
 $table-box-height:5px;
@@ -32,7 +32,8 @@ $table-width:750px;
     display: block;
     background-color:rgba(229,230,233,0.8);
     padding: 14px;
-    width: 690px;
+    width: 750px;
+    overflow: hidden;
 } 
 
 @mixin list-block{
@@ -70,7 +71,7 @@ $table-width:750px;
     font-family: 'Open Sans', sans-serif;
     height: 11px;       
     letter-spacing: 2;       
-   font-size: 20px;
+    font-size: 20px;
     background:#202075;
     color: #fff;
     text-align: center;
@@ -130,6 +131,7 @@ $table-width:750px;
     background: url("../image/csillag_cinke_jobb_kek.png");
     width: 76px;
     height: 54px;
+    position: relative;
 }
 
 
@@ -148,6 +150,7 @@ $table-width:750px;
     background: url("../image/csillag_cinke_jobb_piros.png");
     width: 76px;
     height: 54px;
+    position: relative;
 }
 
 
@@ -195,12 +198,13 @@ body {
     position: relative;
     z-index: 2000;
     margin-top: 20px;
+    padding-right: 5px;
   
 
 }
 
 .table-box-content {
-    width: 500px;
+    width: 520px;
 }
 
 
@@ -238,9 +242,16 @@ body {
 
 // table
 
+.table-box-price{
+    color:$primercolor;
+}
+
 
 .table-title {
     width: 350px;
+    color:$primercolor;
+    font-size: $main-text;
+   font-weight: bold;
 }
 
 
@@ -250,9 +261,7 @@ body {
    
 }
 
-.table-description{
-   width: 370px;
- }
+
 
 .table-food-img{
     margin-left: 20px;
@@ -263,10 +272,7 @@ body {
 .food-box-table{
     @include tablebox;
 }   
-.table-title {
-   font-size: $main-text;
-   font-weight: bold;
-}
+
 
 .meal-icon{
  width: $meail-icon;
@@ -358,11 +364,11 @@ body {
     .food-box-table{
         margin-top: 103px;
         margin-left: 20px;
-        width:750px;
+         width: 750px;
+       
 
         .table-price-xl {
-            font-size: 22px;
-            margin-left: 80px;
+           margin-left: 61px;
         }
 
        
@@ -377,28 +383,25 @@ body {
    #xl-price{
     left: 47%;
 
-      .ribbon-price-content{
-          padding-left: 1px;
-      }
-
-      :before {
+    :before {
         @include ribon-price-blue-bal();
         top:0px;
-        left:20%;
+       left: 58%
      }
 
+     
    }
 
     .ribbon-price {
         top: -2%;
-        left: 34%;
+        left: 38%;
       }
 
 
       .ribbon-price:before {
         @include ribon-price-blue-bal();
         top:0px;
-        left:-43%;
+        left:-47%;
      }
  
       .ribbon-price:after {
@@ -411,14 +414,15 @@ body {
    
     .ribbon {
         z-index: 1000;
-        top: -8%;
-        left: 14%;
+        left: 15%;
+        top: -85px;
         background:$primercolor;
 
        }
 
        .ribbon-content{
-          left:-5px;
+        left: 35px;
+        top: -56%;
          
       }
 
@@ -429,7 +433,8 @@ body {
       
       .ribbon:after {
         @include ribon-blue-jobb; 
-        margin-left: 50px;
+        left: 42%;
+        top: -10px;
       }
       
       
@@ -449,10 +454,12 @@ body {
        margin-left: 25px;
      .food-box-table{
          margin-top: 80px;
+         height: 350px;
+        
      }
 
      .table-price-normal {
-     margin-left: 87px;
+        margin-left: 150px;
     }
 
 
@@ -464,11 +471,12 @@ body {
 
 
 .food-box-second {
-    margin-top: 50px;
+    margin-top: 31px;
+    margin-left: -2px;
 
     .ribbon-price {
         top: 49%;
-        left: 32%;
+        left: 35%;
         background-color: $secunder-color;
        
       }
@@ -492,7 +500,7 @@ body {
     .ribbon {
         z-index: 1000;
         top: 43%;
-        left: 1%;
+        left: 29px;
         background:$secunder-color;
        }
 
@@ -503,8 +511,15 @@ body {
       
       .ribbon:after {
         @include ribon-red-jobb(); 
-        margin-left: 40px;
-      }   
+        left: 61px;
+        top: -10px;
+      }
+      
+      .ribbon-content {
+        position: relative;
+        top: -57%;
+        left: 20%;
+    }
 
 
     .food-img{
@@ -513,7 +528,7 @@ body {
    
     ul li {
         @include list-inline;
-        margin-top: 30px;
+        margin-top: 43px;
     
        
         
@@ -539,15 +554,16 @@ body {
 .food-box-table-third{
     position: relative;
     top:230px;
-    right: 99%;
+    right: 96%;
 
     .food-box-table{
-        width: 722px;
+        margin-left: 20px;
+       
     }
 
 
     .table-price-normal {
-      margin-left: 119px;
+        margin-left: 140px;
     }
 }
 
@@ -558,12 +574,17 @@ body {
 
     .ribbon-price {
         top: 14%;
-        left: 91%;
         background-color: $secunder-color;
+        left: 92%;
     }
 
-
-      .ribbon-price:before {
+       .ribbon-content {
+        position: relative;
+        top: -67%;
+        left: 14%;
+       }
+        
+   .ribbon-price:before {
         @include ribon-price-red-bal();
         top:0px;
         left:-70%;
@@ -590,9 +611,15 @@ body {
       
       .ribbon:after {
         @include ribon-red-jobb(); 
-        margin-left: 40px;
-      }   
-
+        left: 43px;
+        top: -10px
+      }
+      
+      .ribbon-content {
+        position: relative;
+        top: -67%;
+        left: 14%;
+    }
 
 
     .food-img{
@@ -619,7 +646,7 @@ body {
 
     .ribbon-price {
         top: 63%;
-        left: 90%;
+        left: 92%;
     }
 
 
@@ -638,7 +665,7 @@ body {
 
     .ribbon {
         z-index: 1000;
-        top: 58%;
+        top: 59%;
         left: 59%;
        }
 
@@ -649,11 +676,18 @@ body {
       
       .ribbon:after {
         @include ribon-blue-jobb; 
-        margin-left: 50px;
-      }   
+        left: 19%;
+        top: -10px;
+      } 
+      
+      .ribbon-content {
+        position: relative;
+        top: -59%;
+        left: 8%;
+    }
 
     .food-img{
-        margin-left: 109px;
+        margin-left: 44px;
         margin-top: -10px;
         
         ul li {
@@ -668,13 +702,15 @@ body {
 .food-table-box-fourth{
     .food-box-table{
         position:absolute;
-        top: 71%;
+        top: 72%;
         left: 59%;
-        width: 700px;
+        width: 739px;
+       
+       
     }
 
     .table-price-normal {
-        margin-left: 96px;
+        margin-left: 135px;
     }
 }
 

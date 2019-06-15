@@ -36,10 +36,11 @@ body {
 .food-meal {
   position: relative;
   z-index: 2000;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-right: 5px; }
 
 .table-box-content {
-  width: 500px; }
+  width: 520px; }
 
 .table-box div {
   display: inline-block; }
@@ -61,14 +62,17 @@ body {
 .clear {
   clear: both; }
 
+.table-box-price {
+  color: #202075; }
+
 .table-title {
-  width: 350px; }
+  width: 350px;
+  color: #202075;
+  font-size: 24px;
+  font-weight: bold; }
 
 .icon-box {
   width: 128px; }
-
-.table-description {
-  width: 370px; }
 
 .table-food-img {
   margin-left: 20px;
@@ -79,20 +83,17 @@ body {
   display: block;
   background-color: rgba(229, 230, 233, 0.8);
   padding: 14px;
-  width: 690px; }
-
-.table-title {
-  font-size: 22px;
-  font-weight: bold; }
+  width: 750px;
+  overflow: hidden; }
 
 .meal-icon {
   width: 36px; }
 
 .table-price-normal {
-  font-size: 22px; }
+  font-size: 21px; }
 
 .table-price-xl {
-  font-size: 22px;
+  font-size: 21px;
   margin-left: 26px; }
 
 .flex-container {
@@ -172,15 +173,12 @@ body {
   margin-left: 20px;
   width: 750px; }
   .food-box-one-table .food-box-table .table-price-xl {
-    font-size: 22px;
-    margin-left: 80px; }
+    margin-left: 61px; }
 
 .food-box-one {
   margin-top: -15px; }
   .food-box-one #xl-price {
     left: 47%; }
-    .food-box-one #xl-price .ribbon-price-content {
-      padding-left: 1px; }
     .food-box-one #xl-price :before {
       background: url("../image/ara_bal_kek.png");
       width: 43px;
@@ -188,10 +186,10 @@ body {
       position: absolute;
       z-index: 1000;
       top: 0px;
-      left: 20%; }
+      left: 58%; }
   .food-box-one .ribbon-price {
     top: -2%;
-    left: 34%; }
+    left: 38%; }
   .food-box-one .ribbon-price:before {
     background: url("../image/ara_bal_kek.png");
     width: 43px;
@@ -199,7 +197,7 @@ body {
     position: absolute;
     z-index: 1000;
     top: 0px;
-    left: -43%; }
+    left: -47%; }
   .food-box-one .ribbon-price:after {
     background: url("../image/ara_jobb_kek.png");
     width: 43px;
@@ -210,11 +208,12 @@ body {
     left: 90%; }
   .food-box-one .ribbon {
     z-index: 1000;
-    top: -8%;
-    left: 14%;
+    left: 15%;
+    top: -85px;
     background: #202075; }
   .food-box-one .ribbon-content {
-    left: -5px; }
+    left: 35px;
+    top: -56%; }
   .food-box-one .ribbon:before {
     background: url("../image/csillag_cinke_bal_kek.png");
     width: 76px;
@@ -226,7 +225,9 @@ body {
     background: url("../image/csillag_cinke_jobb_kek.png");
     width: 76px;
     height: 54px;
-    margin-left: 50px; }
+    position: relative;
+    left: 42%;
+    top: -10px; }
   .food-box-one .food-img ul li {
     display: block;
     list-style: none;
@@ -235,15 +236,17 @@ body {
 .food-box-second-table {
   margin-left: 25px; }
   .food-box-second-table .food-box-table {
-    margin-top: 80px; }
+    margin-top: 80px;
+    height: 350px; }
   .food-box-second-table .table-price-normal {
-    margin-left: 87px; }
+    margin-left: 150px; }
 
 .food-box-second {
-  margin-top: 50px; }
+  margin-top: 31px;
+  margin-left: -2px; }
   .food-box-second .ribbon-price {
     top: 49%;
-    left: 32%;
+    left: 35%;
     background-color: #EC1B23; }
   .food-box-second .ribbon-price:before {
     background: url("../image/ara_bal_piros.png");
@@ -264,7 +267,7 @@ body {
   .food-box-second .ribbon {
     z-index: 1000;
     top: 43%;
-    left: 1%;
+    left: 29px;
     background: #EC1B23; }
   .food-box-second .ribbon:before {
     background: url("../image/csillag_cinke_bal_piros.png");
@@ -277,13 +280,19 @@ body {
     background: url("../image/csillag_cinke_jobb_piros.png");
     width: 76px;
     height: 54px;
-    margin-left: 40px; }
+    position: relative;
+    left: 61px;
+    top: -10px; }
+  .food-box-second .ribbon-content {
+    position: relative;
+    top: -57%;
+    left: 20%; }
   .food-box-second .food-img {
     margin-bottom: 60px; }
   .food-box-second ul li {
     display: inline-block;
     list-style: none;
-    margin-top: 30px; }
+    margin-top: 43px; }
   .food-box-second .food-box-table {
     margin-left: 60px; }
   .food-box-second .food-name {
@@ -295,19 +304,23 @@ body {
 .food-box-table-third {
   position: relative;
   top: 230px;
-  right: 99%; }
+  right: 96%; }
   .food-box-table-third .food-box-table {
-    width: 722px; }
+    margin-left: 20px; }
   .food-box-table-third .table-price-normal {
-    margin-left: 119px; }
+    margin-left: 140px; }
 
 .food-box-third {
   display: table;
   margin-top: -6px; }
   .food-box-third .ribbon-price {
     top: 14%;
-    left: 91%;
-    background-color: #EC1B23; }
+    background-color: #EC1B23;
+    left: 92%; }
+  .food-box-third .ribbon-content {
+    position: relative;
+    top: -67%;
+    left: 14%; }
   .food-box-third .ribbon-price:before {
     background: url("../image/ara_bal_piros.png");
     width: 43px;
@@ -340,7 +353,13 @@ body {
     background: url("../image/csillag_cinke_jobb_piros.png");
     width: 76px;
     height: 54px;
-    margin-left: 40px; }
+    position: relative;
+    left: 43px;
+    top: -10px; }
+  .food-box-third .ribbon-content {
+    position: relative;
+    top: -67%;
+    left: 14%; }
   .food-box-third .food-img {
     margin-left: 50px; }
     .food-box-third .food-img ul li {
@@ -351,7 +370,7 @@ body {
   display: table; }
   .food-box-fourth .ribbon-price {
     top: 63%;
-    left: 90%; }
+    left: 92%; }
   .food-box-fourth .ribbon-price:before {
     background: url("../image/ara_bal_kek.png");
     width: 43px;
@@ -370,7 +389,7 @@ body {
     left: 90%; }
   .food-box-fourth .ribbon {
     z-index: 1000;
-    top: 58%;
+    top: 59%;
     left: 59%; }
   .food-box-fourth .ribbon:before {
     background: url("../image/csillag_cinke_bal_kek.png");
@@ -383,9 +402,15 @@ body {
     background: url("../image/csillag_cinke_jobb_kek.png");
     width: 76px;
     height: 54px;
-    margin-left: 50px; }
+    position: relative;
+    left: 19%;
+    top: -10px; }
+  .food-box-fourth .ribbon-content {
+    position: relative;
+    top: -59%;
+    left: 8%; }
   .food-box-fourth .food-img {
-    margin-left: 109px;
+    margin-left: 44px;
     margin-top: -10px; }
     .food-box-fourth .food-img ul li {
       display: table-cell;
@@ -393,12 +418,12 @@ body {
 
 .food-table-box-fourth .food-box-table {
   position: absolute;
-  top: 71%;
+  top: 72%;
   left: 59%;
-  width: 700px; }
+  width: 739px; }
 
 .food-table-box-fourth .table-price-normal {
-  margin-left: 96px; }
+  margin-left: 135px; }
 
 .news-books {
   width: 1920px;
